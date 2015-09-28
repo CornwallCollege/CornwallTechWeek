@@ -75,7 +75,7 @@ VERSION : 1.2
 	margin: 0;
 	vertical-align: baseline;
 }
-a{ text-decoration: none !important; }
+a{ color:#fff; text-decoration: underline !important; }
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
