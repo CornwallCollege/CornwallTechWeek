@@ -238,6 +238,7 @@ function navigation(){
 function pageTransation(){
 	var pageUrl;
 	var navlink = $("#navigation .nav-link");
+	var navlinkhome = $("#navigation2 .nav-link");    
 	var ajaxpage = $("#ajax-page");
 	var homepage = $("#home-page");
 	var home_wrp = $("#home-page .ac");
@@ -245,8 +246,8 @@ function pageTransation(){
 
 	navlink.on("click",function(){
 		pageUrl = $(this).attr("data-page");
-		loaderIn();
-
+		loaderIn();    
+        
 		if($("html").hasClass("ie9")){
 			if (pageUrl == 'home.html'){
 				$("#ajax-page .pg-wrp .anim").animate({
@@ -323,6 +324,86 @@ function pageTransation(){
 			}
 		}
 	});
+	navlinkhome.on("click",function(){
+		pageUrl = $(this).attr("data-page");
+		loaderIn();    
+        
+		if($("html").hasClass("ie9")){
+			if (pageUrl == 'home.html'){
+				$("#ajax-page .pg-wrp .anim").animate({
+					opacity: 0
+				}, 800, function(){
+					if($("#ajax-page").hasClass("port-full")){
+						$("#ajax-page").removeClass("port-full");
+					}
+					home_anim.animate({
+						opacity: 1
+					}, 800);
+				});
+			}
+			else{
+				if(homepage.hasClass("active-home")){
+					home_anim.animate({
+						opacity: 0
+					}, 800, function(){
+						pageload(pageUrl, ajaxpage);
+						$("#ajax-page .pg-wrp .anim").animate({
+							opacity: 1
+						}, 800);
+					});
+				}
+				else{
+					$("#ajax-page .pg-wrp .anim").animate({
+						opacity: 0
+					}, 800, function(){
+						ajaxpage.html('');
+						pageload(pageUrl, ajaxpage);
+						$("#ajax-page .pg-wrp .anim").animate({
+							opacity: 1
+						}, 800);
+					});
+				}
+			}
+		}
+		else{
+			if (pageUrl == 'home.html'){
+				$("#ajax-page .pg-wrp").addClass("fadeOut");
+				setTimeout(function(){
+					if($("#ajax-page").hasClass("port-full")){
+						$("#ajax-page").removeClass("port-full");
+					}
+					ajaxpage.html('');
+					loader();
+					homepage.addClass("active-home");
+					home_wrp.addClass("fadeInUp");
+					// Resting clock function
+					if(ajaxpage.find('#time').length == 0) {
+						if (typeof e !== 'undefined') {
+							e.doCountDown = function() {}; t='';
+						};
+					}
+				}, 800);
+			}
+			else{
+				if(homepage.hasClass("active-home")){
+					homepage.addClass("fadeOut");
+					setTimeout(function(){
+						homepage.removeClass("active-home");
+						homepage.removeClass("fadeOut");
+						home_wrp.removeClass("fadeInUp");
+						pageload(pageUrl, ajaxpage);
+					}, 800);
+				}
+				else{
+					$("#ajax-page .pg-wrp").addClass("fadeOut");
+					setTimeout(function(){
+						ajaxpage.html('');
+						pageload(pageUrl, ajaxpage);
+					}, 800);
+				}
+			}
+		}
+	});    
 }
 
 /*	PAGE-LOAD

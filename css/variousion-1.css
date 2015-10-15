@@ -124,11 +124,10 @@ h1, h2, h3, h4, h5, h6,
 ------------------------------*/
 .tagline h1{ font-weight: 800; }
 .tagline p{
-	padding-top: 10px;
+	padding: 10px 0;
 	border-top: 1px dashed;
 	border-color: rgba(255,255,255,0.5);
 }
-
 /*	SUBSCRIBE
 ------------------------------*/
 .subscribe .form-control{ border-bottom: 1px dashed; border-color: rgba(255,255,255,0.5); }
@@ -142,7 +141,7 @@ h1, h2, h3, h4, h5, h6,
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	ABOUT PAGE
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.text-info p{ color: rgba(255,255,255,0.65); }
+.text-info p{ color: rgba(255,255,255,0.8); }
 
 /*	MEASURE-BOX
 ------------------------------*/

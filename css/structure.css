@@ -1,13 +1,16 @@
 .nc-menu-trigger {
     position: fixed;
     z-index: 3;
-    top: 30px;
-    right: 30px;
+    top: 0px!important;
+    right: 0px;
     height: 44px;
     width: 44px;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
+    background-color:#2D8BAD;
+    height:65px!important;
+    width:60px!important;
 
     -webkit-transition: -webkit-transform 0.2s;
     -moz-transition: -moz-transform 0.2s;
