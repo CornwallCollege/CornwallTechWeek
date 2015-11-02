@@ -1715,3 +1715,15 @@ html.ff .contact-box .text{ height: 50px; }
 .package-box:hover{
 	border-color: #fff;
 }
+
+.section-head {
+    background-color:white;
+    width:100%;
+    color:#2D8BAD;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
