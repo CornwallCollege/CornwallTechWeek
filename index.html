@@ -1,298 +1,541 @@
 <!DOCTYPE html>
-<!--
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
-AUTHOR : NCode.Art
-PROJECT : NC-Hold Coming-Soon Page
-VERSION : 1.2
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
--->
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta name="description" content="7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties. ">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+    	
+        <title>Cornwall Tech Week</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties. ">
 
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Cornwal Tech Week" />
-    <meta property="og:description" content="Cornwall Tech Week. 7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties." />
-    <meta property="og:url" content="http://www.cornwalltechweek.org/" />
-    <meta property="og:site_name" content="Cornwall Tech Week" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties."/>
-    <meta name="twitter:title" content="Cornwall Tech Week"/>
-    <meta name="twitter:domain" content="Cornwall Tech Week"/>
-    <meta name="twitter:image:src" content=""/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Cornwal Tech Week" />
+        <meta property="og:description" content="Cornwall Tech Week. 7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties." />
+        <meta property="og:url" content="http://www.cornwalltechweek.org/" />
+        <meta property="og:site_name" content="Cornwall Tech Week" />
+        <meta property="og:image" content="" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="7-13 Dec 2015. A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties."/>
+        <meta name="twitter:title" content="Cornwall Tech Week"/>
+        <meta name="twitter:domain" content="Cornwall Tech Week"/>
+        <meta name="twitter:image:src" content=""/>
+        <meta name="author" content="tango3.co.uk">
+        
+        <!-- viewport settings -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>7-13 Dec 2015 | Cornwall Tech Week</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery.countdown.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/flipCard.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.socialfeed.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/color/blue.css"><!-- Choose your color, green, blue, yellow, red, darkblue, purple -->
 
-	<!-- [ FONT-AWESOME ICON ] -->
-	<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
 
-	<!-- [ PLUGIN STYLESHEET ] -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" type="text/css" href="css/partical-animation.css">
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-	<!-- [ DEFAULT STYLESHEET ] -->
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/structure.css">
-	<link rel="stylesheet" type="text/css" href="css/main-style.css">
-	<link rel="stylesheet" type="text/css" href="css/variousion-1.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-</head>
-<body class="single-image">
+	</head>
 
-	<div class="page-loader-wrapper">
-		<div class="loader">
+	<body>
+    
+    	<!-- PRELOADING  -->
+        <div id="preload">
+        	<div class="preload">
+                <div class="loader">
+                    Loading...
+                </div>
+            </div>
+        </div> 
+        
+        <!-- NAVIGATION -->
+       	<nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
+          <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+          <div class="container">
+            <div data-scroll-header class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/cc-logo-white.png" alt="logo"><img src="img/swc.png" alt="logo"></a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="nav">
+              <ul class="nav navbar-nav navbar-right uppercase">
+                <li><a data-scroll href="#overview">overview</a></li>                
+                <li><a data-scroll href="#schedule">Schedule</a></li>
+                <li><a data-scroll href="#hoc">Hour of Code</a></li>
+                <li><a data-scroll href="#register">Register</a></li>
+                <li><a data-scroll href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
+       
+      	<!-- TOP -->
+        <section id="top" data-stellar-background-ratio="0.5">
+        	<div class="countdown">
+                <div class="container">
+                    <div class="row">
+                    	<div class="col-lg-8 col-lg-offset-2 text-center">
+                        	<h1 class="uppercase">Cornwall Tech Week</h1>
+                            <h3>7 - 13 December 2015</h3>
+                        </div>
+                        
+                        <div class="col-md-4 col-lg-4 col-md-offset-4 text-center">
+                            <div id="countdown"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- OVERVIEW -->
+        <section id="overview">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-10 col-lg-offset-1 text-center">
+                    	<i class="fa fa-4x fa-globe"></i>
+                    	<h2 class="uppercase">about cornwall tech week</h2>
+                        <p class="lead">Cornwall has an amazing tech and digital sector, but you might not know it. There are many businesses operating on a global scale working with some of the big names, but it's not always obvious.
+                        </p><p>We want to change that during Tech Week. We hope to raise the aspirations of the next generation by letting them know of the great digital companies on their doorstep, we want to help teachers delivering the new national computing curriculum and we want to have fun!</p>
+                    </div>
+                    
+                    
+                    <!-- MILESTONE -->
+                    <div id="milestone">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <div class="row">
+                            
+                                <div class="fact col-xs-6 col-md-3 col-lg-3">
+                                    <p class="timer" data-to="2500" data-speed="10000"></p>
+                                    <i class="fa fa-2x fa-users"></i>
+                                    <p>employees</p>
+                                    
+                                </div>
+                            
+                                <div class="fact col-xs-6 col-md-3 col-lg-3">
+                                    <p class="timer" data-to="70" data-speed="10000"></p>
+                                    <i class="fa fa-2x fa-clock-o"></i>
+                                    <p>companies</p>
+                                </div>
+                            
+                                <div class="fact col-xs-6 col-md-3 col-lg-3">
+                                    <p class="timer" data-to="35" data-speed="10000"></p>
+                                    <i class="fa fa-2x fa-power-off"></i>
+                                    <p>average salary</p>
+                                </div>
+                            
+                                <div class="fact col-xs-6 col-md-3 col-lg-3">
+                                    <p class="timer" data-to="200" data-speed="10000"></p>
+                                    <i class="fa fa-2x fa-microphone"></i>
+                                    <p>new jobs by 2020</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+        </section>
+        
 
-		</div>
-	</div>
-
-	<!-- [ MAIN-WRAPPER ] -->
-	<div id="main-wrapper">
-
-		<!-- [ MENU-ICON ] -->
-		<a href="#nc-menu" class="nc-menu-trigger"><span>Menu</span></a>
-		<!-- [ MENU-ICON END ] -->
-
-		<!-- [ PAGE-SECTION ] -->
-		<main id="main" class="background" data-image="images/cornwall-540443_1920-1-1024x768.jpg">
-
-			<!-- [ BACKGROUND-OVERLAY ] -->
-			<div class="overlay" style="background-color: rgba(0,0,0,0.6); opacity: 0.6;"></div>
-			<!-- [ BACKGROUND-OVERLAY END ] -->
-
-			<div class="nc-content-section index nc-active vhm">
-
-				<!-- [ PARTICLE ANIMATION ] -->
-				<div id="particles-js"></div>
-				<!-- [ PARTICLE ANIMATION END ] -->
-
-				<!-- [ HOME-PAGE ] -->
-				<div id="home-page" class="page-wrapper vhm-item active-home anim s01">
-					<div class="container">
-
-						<!-- [ LOGO ] -->
-						<div class="logo ac anim fadeInUp s01 delay-0-5s">
-                            <div class="logo-wrp" style="padding-right: 30px;">
-                                <img src="images/cc-logo-white.png" alt="Logo">
-							</div>
-                            <div class="logo-wrp" style="padding-left: 30px;">
-                                <img src="images/swc.png" alt="Logo">
-							</div>
+        <!-- SCHEDULE -->
+        <section id="schedule">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-10 col-lg-offset-1">
+                    	<h2 class="uppercase text-center">Schedule</h2>
+                        
+                        <div id="days" class="owl-carousel">
+                        	<div class="item uppercase">
+                            	<h4 class="uppercase hidden-xs">saturday</h4>
+                            	<h5>5 Dec</h5>
+                            </div>
+                            
+                            <div class="item uppercase">
+                            	<h4 class="uppercase hidden-xs">tuesday</h4>
+                            	<h5>8 Dec</h5>
+                            </div>
+                            
+                            <div class="item uppercase">
+                            	<h4 class="uppercase hidden-xs">wednesday</h4>
+                            	<h5>9 Dec</h5>
+                            </div>
+                            
+                            <div class="item uppercase">
+                            	<h4 class="uppercase hidden-xs">thursday</h4>
+                            	<h5>10 Dec</h5>
+                            </div>
+                            
+                            <div class="item uppercase">
+                            	<h4 class="uppercase hidden-xs">saturday</h4>
+                            	<h5>12 Dec</h5>
+                            </div>
 						</div>
-						<!-- [ LOGO END ] -->
-
-						<!-- [ TAGLINE ] -->
-						<div class="tagline ac anim fadeInUp s01 delay-0-6s">
-
-							<!-- ANIMATION TEXT -->
-							<div class="carousel-widget text-carousel" data-in="flipInX" data-out="fadeOut" data-itemrange="false"  data-autoplay="true" data-loop="true" data-items="1" data-mouseDrag="false" data-touchDrag="false">
-								<div class="carousel">
-
-									<div class="owl-carousel owl-theme">
-
-										<div class="item">
-											<h1>Cornwall Tech Week</h1>
-										</div>
-
-										<div class="item">
-											<h1>7 - 13 December 2015</h1>
-										</div>
-
-										<div class="item">
-											<h1>Let's shout about Tech!</h1>
-										</div>
-
-									</div>
-
-								</div>
-							</div>
-
-                                    <div class="btn-group btn-group-justified nav-link" role="group" id="navigation2">
-                                        <a class="btn btn-color link-box vhm nav-link" role="button" data-page="pages/employers.html" href="#employers">Employers/businesses</a>
-                                        <a class="btn btn-color link-box vhm nav-link" role="button" data-page="pages/education.html" href="#education">Schools &amp; Colleges</a>
-                                        <a class="btn btn-color link-box vhm nav-link" role="button" data-page="pages/individuals.html" href="#individuals">Individuals &amp; Parents</a>
+                        
+                        <div id="timetable" class="owl-carousel owl-theme">
+                        
+                            <!-- DAY 1 -->
+                            <div id="day1" class="item">
+                            
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">10.30 AM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Hour of Code @ Eden</h3>
+                                            <p>It's a free day for teachers at Eden, while you are there complete the global hour of code and demystify some of the computing curriculum.<a href="http://cornwalltechweek.mitingu.com/hour-of-code-eden-project-1-1">Register</a></p>
+                                        </div>
                                     </div>
-
-							<p class="anim fadeInUp s01 delay-0-7s">A week of events and activities that celebrate and showcase the Cornish Tech industries, raising awareness, aspirations and opportunties.</p>
-                            <p class="anim fadeInUp s02 delay-1-5s">Our Website is having resources added daily, subscribe to be notified of changes.</p>
-						</div>
-						<!-- [ TAGLINE END ] -->
-
-						<!-- [ SUBSCRIBE ] -->
-						<div class="subscribe ac anim fadeInUp s01 delay-0-8s">
-							<form id="notifyMe" class="subscription-form clear form-field-wrapper" method="POST" action="notify-me.php">
-								<input type="text" class="form-control" name="email" placeholder="Subscribe">
-								<button type="submit" id="submit" class="icon vhm"><i class="fa fa-envelope-o vhm-item"></i></button>
-							</form>
-						</div>
-						<!-- [ SUBSCRIBE END ] -->
-
-						<!-- [ SOCIAL ICON ] -->
-						<div class="social-icon ac anim fadeInUp s01 delay-0-9s">
-							<!--<a class="icon vhm" href="#">
-								<span class="box"></span>
-								<i class="fa fa-facebook vhm-item"></i>
-							</a>-->
-							<a class="icon vhm" href="https://twitter.com/cornwalltechwk">
-								<span class="box"></span>
-								<i class="fa fa-twitter vhm-item"></i>
-							</a>
-							<!--<a class="icon vhm" href="#">
-								<span class="box"></span>
-								<i class="fa fa-linkedin vhm-item"></i>
-							</a>-->
-						</div>
-						<!-- [ SOCIAL ICON END ] -->
-
-						<!-- [ COPYRIGHT ] -->
-						<div class="copyrights ac anim fadeInUp s01 delay-1s">
-							<span><i class="fa fa-copyright"></i></span>2015 Cornwall College
-						</div>
-						<!-- [ COPYRIGHT END ] -->
-
-					</div>
-				</div>
-				<!-- [ HOME-PAGE END ] -->
-
-				<!-- [ AJAX-PAGE ] -->
-				<div id="ajax-page" class="page-wrapper vhm-item">
-
-				</div>
-				<!-- [ AJAX-PAGE END ] -->
-
-			</div>
-
-			<!-- [ OC-CLICK OVERLAY ] -->
-			<div class="nc-overlay"></div>
-			<!-- [ OC-CLICK OVERLAY END ] -->
-
-		</main>
-		<!-- [ PAGE-SECTION END ] -->
-
-		<!-- [ NAVIGATION ] -->
-		<nav class="nc-menu-container" id="nc-menu">
-			<header class="nav-header vm">
-				<a href="#0" class="nc-menu-close"></a>
-			</header>
-
-			<ul id="navigation" class="nc-menu">
-				<li class="nc-active" data-menu="index">
-					<a class="link-box vhm nav-link" data-page="home.html" href="#home">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-home vhm-item"></i></span>
-							<span class="text">Home</span>
-						</span>
-					</a>
-				</li>
-
-				<li data-menu="about">
-					<a class="odd link-box vhm nav-link" data-page="pages/about.html" href="#about">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-info vhm-item"></i></span>
-							<span class="text">About</span>
-						</span>
-					</a>
-				</li>
-
-				<!--<li data-menu="our-team">
-					<a class="odd link-box vhm nav-link" data-page="pages/our-team.html" href="#our-team">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-users vhm-item"></i></span>
-							<span class="text">Team</span>
-						</span>
-					</a>
-				</li>
-
-				<li data-menu="services">
-					<a class="odd link-box vhm nav-link" data-page="pages/services.html" href="#services">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-cogs vhm-item"></i></span>
-							<span class="text">Services</span>
-						</span>
-					</a>
-				</li>
--->
-				<li data-menu="employers-1">
-					<a class="odd link-box vhm nav-link" data-page="pages/employers.html" href="#employers-1">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-briefcase vhm-item"></i></span>
-							<span class="text">Employers</span>
-						</span>
-					</a>
-				</li>
-
-				<li data-menu="education-1">
-					<a class="odd link-box vhm nav-link" data-page="pages/education.html" href="#education-1">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-graduation-cap vhm-item"></i></span>
-							<span class="text">Schools &amp; Colleges</span>
-						</span>
-					</a>
-				</li>      
-
-				<li data-menu="individuals-1">
-					<a class="odd link-box vhm nav-link" data-page="pages/individuals.html" href="#individuals-1">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-user vhm-item"></i></span>
-							<span class="text">Individuals &amp; Parents</span>
-						</span>
-					</a>
-				</li>                   
-
-				<li data-menu="package">
-					<a class="link-box vhm nav-link" data-page="pages/events.html" href="#events">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-calendar vhm-item"></i></span>
-							<span class="text">Events</span>
-						</span>
-					</a>
-				</li>
-
-				<li data-menu="time">
-					<a class="link-box vhm nav-link" data-page="pages/time.html" href="#time">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-clock-o vhm-item"></i></span>
-							<span class="text">When</span>
-						</span>
-					</a>
-				</li>
-
-				<li data-menu="contact">
-					<a class="odd link-box vhm nav-link" data-page="pages/contact.html" href="#contact">
-						<span class="vhm-item inner-wrp">
-							<span class="icon vhm"><i class="fa fa-envelope vhm-item"></i></span>
-							<span class="text">Contact</span>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- [ NAVIGATION END ] -->
-
-	</div>
-	<!-- [ MAIN-WRAPPER END ] -->
-
-	<!-- [ DEFAULT SCRIPT ] -->
-	<script src="js/jquery-1.11.3.min.js"></script>
-
-	<!-- [ PLUGIN SCRIPT ] -->
-	<script src="js/plugins.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/partical-animation.js"></script>
-
-	<!-- [ COMMON SCRIPT ] -->
-	<script src="js/common.js"></script>
-
-</body>
+                                </div>
+                                
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">1.00 PM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Hour of Code @ Eden</h3>
+                                            <p>It's a free day for teachers at Eden, while you are there complete the global hour of code and demystify some of the computing curriculum. <a href="http://cornwalltechweek.mitingu.com/hour-of-code-eden-project-1-2">Register</a></p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">3.00 PM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                             <h3>Hour of Code @ Eden</h3>
+                                            <p>It's a free day for teachers at Eden, while you are there complete the global hour of code and demystify some of the computing curriculum. <a href="http://cornwalltechweek.mitingu.com/hour-of-code-eden-project-3">Register</a></p>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            <!-- DAY 2 -->
+                            <div id="day2" class="item">
+                            
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">04.30 PM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Computing CPD for KS 1,2,3 and 4</h3>
+                                            <p>Join us at Truro College from 4.30pm til 6pm where we will help you with the new computing curriculum, demystifying the terminology and giving you activities to take back to your class.  And its FREE!!!!</p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                               
+                            
+                            <!-- DAY 3 -->
+                            <div id="day3" class="item">
+                            
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">09.30 AM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Lego Education @ Eden!</h3>
+                                            <p>Lego Education are running a workshop from 9.30 til 11.30 aimed at KS2 and KS3.  Learn about the Lego Wedo and Lego Mindstorms and build your confidence and skills with the computing curriculum.</p>
+                                        </div>
+                                    </div>
+                                </div>                                                                
+                            
+                            </div>
+                            
+                            <!-- DAY 4 -->
+                            <div id="day4" class="item">
+                            
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">09.30 AM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Internet of Things (IoT)</h3>
+                                            <p>Whats IoT all about, where do I start. Find out these answers and more from a greet speaker - </p>
+                                            <span class="name">Genesis Daniels</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">4.30 PM</span>
+                                        </div>
+                                        
+                                      <div class="description">
+                                            <h3>Computing CPD for KS 1,2,3 and 4</h3>
+                                            <p>Join us at Truro College from 4.30pm til 6pm where we will help you with the new computing curriculum, demystifying the terminology and giving you activities to take back to your class.  And its FREE!!!!</p>                                                                                    
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            <!-- DAY 5 -->
+                            <div id="day4" class="item">
+                            
+                                <div class="event">
+                                    <div class="event-inner">
+                                        <div class="icon">
+                                            <i class="fa fa-2x fa-clock-o"></i>
+                                            <span class="time">10.00 AM</span>
+                                        </div>
+                                        
+                                        <div class="description">
+                                            <h3>Cornwalls First Pi Jam!</h3>
+                                            <p>Join us at Bodmin College form 10am til 5pm for a day of all things computing.  No matter what your age come along and have a go at making something new and exciting, it could be a robot or a web site, or something completely different.  We can guarunatee it will be an interesting and fun day. </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                                                                                           
+                            </div>
+                            
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- VENUE -->
+        <section id="hoc">
+			<div class="venue">
+            	<div class="container">
+                	<div class="row">
+                    	<div class="venue-address">
+                            <h2 class="uppercase">hour of code</h2>
+                            <p>The hour of code is a global campaign to inspire more people into the digital jobs.  Can you run an hour of code session in your School, Library, Village Hall, Business? If so, register on the hour of code website <a href="http://hourofcode.org" target="_blank">HourOfCode.org</a> and send us a message so we can add you to the schedule.<a href="mailto:info@cornwalltechweek.org">info@cornwalltechweek.org</a></p>                            
+                            <a class="button button-light" href="http://hourofcode.org">more info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>                                            
+        </section>        
+                
+        
+		<!-- FAQ and GALLERY -->
+		<section id="faq-gallery">
+        	<div class="container">
+            	<div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="panel-group" id="faq">
+                          <h3 class="uppercase">faq</h3>
+                          <p>Suspendisse mattis tempus erat, ac aliquam lectus</p>
+                          
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#faq" href="#collapseOne" class="collapsed">
+                                  <i class="fa fa-2x fa-plus-circle"></i> Mauris id vestibulum eros
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                              <div class="panel-body">
+                                <p class="small">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#faq" href="#collapseTwo" class="collapsed">
+                                  <i class="fa fa-2x fa-plus-circle"></i> Phasellus fermentum dolor commodo
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p class="small">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#faq" href="#collapseThree" class="collapsed">
+                                  <i class="fa fa-2x fa-plus-circle"></i> Etiam nec sem mollis
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p class="small">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#faq" href="#collapseFour" class="collapsed">
+                                  <i class="fa fa-2x fa-plus-circle"></i> Etiam suscipit a velit volutpat dictum
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p class="small"> Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#faq" href="#collapseFive" class="collapsed">
+                                  <i class="fa fa-2x fa-plus-circle"></i> Nulla quis adipiscing nisi
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p class="small">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6">
+                    	<div id="gallery">
+                        	<h3>Updates</h3>                            
+                        	<div class="social-feed">                            	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+		<!-- CONTACT -->
+        <section id="contact">
+        	
+             <!-- map -->
+            <div id="gmap_canvas"></div>
+            
+            <div class="container">
+            	<div class="row">
+                	<div class="col-md-4 col-lg-4">
+                    	<div class="contact">
+                        	<h2 class="uppercase">contact</h2>
+                            <p>Donec aliquam libero quam, non accumsan eros pellentesque nec. Sed ultrices, magna eget fermentum dapibus, arcu ante venenatis ante, in dapibus diam massa a urna. </p>
+                        	
+                        	<p class="address">
+                            1571 Hidden Terrace New York, NY, 13247<br><br>
+                            (917) 600-4570</p>
+                        
+                        	<div class="social">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+		<!-- modernizr -->
+        <script src="js/modernizr.custom.00695.js"></script>
+        
+    	<script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/flipCard.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/retina-1.1.0.min.js"></script>
+        <script src="js/doT.min.js"></script>
+        <script src="js/codebird.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/jquery.socialfeed.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+        
+      	
+        <!-- GOOGLE ANALYTICS -->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-XXXXXX-XX', 'yourdomain.com');  
+		  ga('send', 'pageview');
+		
+		</script> 
+        
+     
+        
+        
+	</body>
 </html>
