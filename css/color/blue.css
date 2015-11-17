@@ -370,3 +370,7 @@ select {
 .mfp-bg {
 	background:#3498db;
 }
+
+.venue-address a, .contact a {
+	color: yellow;
+}

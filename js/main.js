@@ -143,19 +143,13 @@ jQuery(document).ready(function($) {
     
     
     
-    $('.social-feed-container').socialfeed({
-        // FACEBOOK
-        facebook:{
-            accounts: ['@118833098184945'],  //Array: Specify a list of accounts from which to pull wall posts
-            limit: 10,                                   //Integer: max number of posts to load
-            access_token: '351984661624125|235f03a6c7cab889853ae7d8d74fd01c'         //String: "APP_ID|APP_SECRET"
-        },
+    $('.social-feed-container').socialfeed({        
         // TWITTER
         twitter:{
             accounts: ['@CornwallTechWk'],                      //Array: Specify a list of accounts from which to pull tweets
             limit: 10,                                   //Integer: max number of tweets to load
-            consumer_key: 'YOUR_CONSUMER_KEY',          //String: consumer key. make sure to have your app read-only
-            consumer_secret: 'YOUR_CONSUMER_SECRET_KEY',//String: consumer secret key. make sure to have your app read-only
+            consumer_key: 'CcwITaADQ1HlZpyDZKt9ltZ6e',          //String: consumer key. make sure to have your app read-only
+            consumer_secret: 'EToLKREdvd83rYEbedU0aWJETRNdHanubPv5Mr36f66Wx7MjLL',//String: consumer secret key. make sure to have your app read-only
          },
 
         // GENERAL SETTINGS
@@ -262,24 +256,24 @@ $(window).load(function(){
 	//GOOGLE MAP
 	function init_map() {
     var myOptions = {
-        zoom: 14,
-        center: new google.maps.LatLng(40.801485408197856, -73.96745953467104), //change the coordinates
+        zoom: 9,
+        center: new google.maps.LatLng(50.334513, -5.153779), //change the coordinates
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false,
 		styles: [{featureType:'all',stylers:[{saturation:-100},{gamma:0.50}]}]
     };
     map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-    marker = new google.maps.Marker({
-        map: map,
-        position: new google.maps.LatLng(40.801485408197856, -73.96745953467104) //change the coordinates
-    });
-    infowindow = new google.maps.InfoWindow({
+    //marker = new google.maps.Marker({
+    //    map: map,
+    //    position: new google.maps.LatLng(40.801485408197856, -73.96745953467104) //change the coordinates
+    //});
+    /*infowindow = new google.maps.InfoWindow({
         content: "<b>Evential 2014</b><br/>1571 Hidden Terrace<br/> New York"  //add your address
     });
     google.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
     });
-    infowindow.open(map, marker);
+    infowindow.open(map, marker);*/
 	}
 	google.maps.event.addDomListener(window, 'load', init_map);
 	

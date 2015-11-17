@@ -185,7 +185,7 @@ nav.top-nav-collapse .navbar-brand > img {
 
 #top h1 {
 	font-family:'Economica';
-	font-size:60px;
+	font-size:80px;
 	margin-top:2em;
 }
 
@@ -459,7 +459,7 @@ nav.top-nav-collapse .navbar-brand > img {
 }
 
 .venue {
-	background:url(../img/hoc-1.jpg) bottom center no-repeat cover fixed;
+	background:url('../img/hoc-1.jpg');
 	width:100%;
 	height:auto;
 	min-height:540px;
@@ -473,7 +473,7 @@ nav.top-nav-collapse .navbar-brand > img {
 	min-height:250px;
 	position:absolute;
 	bottom:0;
-    width:40%;
+    width:285px;
 }
 
 #venue h3 {
