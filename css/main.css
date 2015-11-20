@@ -876,4 +876,7 @@ select {
     transform: rotate(360deg);
   }
 }
-
+.synced > .item{
+    background: #3498db!important;
+	color:white!important;
+}
