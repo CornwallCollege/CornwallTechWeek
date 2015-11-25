@@ -880,3 +880,6 @@ select {
     background: #3498db!important;
 	color:white!important;
 }
+.owl-wrapper .owl-item h4{
+	font-size:13px;	
+}

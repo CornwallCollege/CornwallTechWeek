@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	//COUNTDOWN TIMER
 	var newYear = new Date(); 
     newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-    $('#countdown').countdown({until: new Date(2015, 12-1, 7)}); // enter event day
+    $('#countdown').countdown({until: new Date(2015, 12-1, 4)}); // enter event day
     
     $('#removeCountdown').toggle(
         function() {
@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
   });
  
   days.owlCarousel({
-   	items : 5,
+   	items : 7,
     itemsMobile       : [479,4],
     pagination:false,
     responsiveRefreshRate : 100,

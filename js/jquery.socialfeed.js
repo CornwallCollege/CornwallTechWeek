@@ -176,7 +176,7 @@ if (typeof Object.create !== 'function') {
                 twitter: {
                     posts: [],
                     loaded: false,
-                    api: 'http://api.tweecool.com/',
+                    api: 'https://api.tweecool.com/',
 
                     getData: function(account) {
 
@@ -222,13 +222,13 @@ if (typeof Object.create !== 'function') {
                             if (element.id) {
                                 post.id = element.id;
                                 post.dt_create = moment(element.created_at, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en');
-                                post.author_link = 'http://twitter.com/' + element.user.screen_name;
+                                post.author_link = 'https://twitter.com/' + element.user.screen_name;
                                 post.author_picture = element.user.profile_image_url;
                                 post.post_url = post.author_link + '/status/' + element.id_str;
                                 post.author_name = element.user.name;
                                 post.message = element.text;
                                 post.description = '';
-                                post.link = 'http://twitter.com/' + element.user.screen_name + '/status/' + element.id_str;
+                                post.link = 'https://twitter.com/' + element.user.screen_name + '/status/' + element.id_str;
 
                                 if (options.show_media === true) {
                                     if (element.entities.media && element.entities.media.length > 0) {
@@ -433,7 +433,7 @@ if (typeof Object.create !== 'function') {
 
                             post.id = element.id;
                             post.dt_create = moment(element.created_time * 1000);
-                            post.author_link = 'http://instagram.com/' + element.user.username;
+                            post.author_link = 'https://instagram.com/' + element.user.username;
                             post.author_picture = element.user.profile_picture;
                             post.author_name = element.user.full_name;
                             post.message = (element.caption && element.caption) ? element.caption.text : '';
